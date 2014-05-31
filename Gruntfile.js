@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       },
 
       html: {
-        files: ['index.html'],
+        files: ['index.html', 'work/*.html'],
         options: {
           spawn: false,
         }
@@ -39,7 +39,6 @@ module.exports = function(grunt) {
     },
 
 
-    //uglify my javascript files.
     uglify: {
       build: {
         src: ['js/main.js', 'js/plugins.js'], //input
@@ -106,6 +105,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-livereload');
+
 
   // Default task(s).
   grunt.registerTask('default', ['livereload',  'autoprefixer', 'uglify', 'imagemin', 'compass']);
