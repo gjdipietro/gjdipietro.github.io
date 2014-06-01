@@ -1,7 +1,4 @@
 
-$base-font-size: 18px;
-$base-line-height: 32px;
-@include establish-baseline($base-font-size);
 
 $san_serif: 'Open Sans', helvetica, arial, sans-serif;;
 $serif: Merriweather, georgia, serif;
@@ -16,10 +13,83 @@ $serif: Merriweather, georgia, serif;
        url('webfont.svg#svgFontName') format('svg'); // Legacy iOS 
 }*/
 
+
+
+
+
 html {
-  font-family: $serif;
+  	font-family: $serif;
+  	font-size: 62.5%;	
+	@media all and (min-width: 25em) { /*400px*/
+		
+	}
+	@media all and (min-width: 50em) { /*800px*/
+		
+	}
+	@media all and (min-width: 75em) { /*1200px*/
+		
+	}
+}
+body {
+	font-size: $unit;
+  	font-size: $unitrem;
+  	line-height:1.8125;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading {
+h1, h2, h3, h4, h5, h6 {
     font-family:  $san_serif;
+    margin: 0 0 0 0;
+	padding: 0;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1.1;
 }
+
+h1, .h1 {
+  font-size: $unit*3;
+  font-size: $unitrem*3;
+  margin-bottom: $unit;
+  margin-bottom: $unitrem;
+  @media all and (min-width: 50em) { 
+  	
+  }
+}
+h2, .h2 {
+  font-size: $unit*2;
+  font-size: $unitrem*2;
+  margin-bottom: 0;
+  
+}
+h3, .h3 { // In blog post sub sections
+  font-size: $unit*1.75;
+  font-size: $unitrem*1.75;
+  margin: 0;
+  
+}
+h4, .h4 {
+  font-size: $unit*1.5;
+  font-size: $unitrem*1.5;
+  margin-bottom: 0;
+  
+}
+h5, .h5, h6, .h6 {
+  font-size: $unit*1;
+  font-size: $unitrem*1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  
+}
+
+
+article {
+	p, figure, ol, ul, blockquote, pre {
+		margin-bottom:29.25px;
+		margin-bottom:1.8125;
+	}
+	h2, .h2, h3, .h3 {
+		margin-top: $unit*3;
+	}
+}
+
+
+
