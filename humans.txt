@@ -27,12 +27,16 @@
 
 	
 
-jekyll?
-backbone.js
-git hub
-git hub pages
 
-svgs
-web fonts
+# to start local dev
+go to project folder
 
-responsive images
+spin up jekyll for development 
+
+jekyll serve --watch
+http://localhost:4000/
+
+grunt watch 
+(probably a grunt to eliminate jekyll serve)
+
+

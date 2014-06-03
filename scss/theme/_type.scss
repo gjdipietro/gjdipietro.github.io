@@ -1,8 +1,5 @@
 
 
-$san_serif: 'Open Sans', helvetica, arial, sans-serif;;
-$serif: Merriweather, georgia, serif;
-
 /*
 @font-face {
   font-family: 'MyWebFont';
@@ -46,8 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: $unit*3;
-  font-size: $unitrem*3;
+  @include font-size(3);
   margin-bottom: $unit;
   margin-bottom: $unitrem;
   @media all and (min-width: 50em) { 
@@ -55,26 +51,22 @@ h1, .h1 {
   }
 }
 h2, .h2 {
-  font-size: $unit*2;
-  font-size: $unitrem*2;
+  @include font-size(2);
   margin-bottom: 0;
   
 }
 h3, .h3 { // In blog post sub sections
-  font-size: $unit*1.75;
-  font-size: $unitrem*1.75;
+  @include font-size(1.75);
   margin: 0;
   
 }
 h4, .h4 {
-  font-size: $unit*1.5;
-  font-size: $unitrem*1.5;
+  @include font-size(1.5);
   margin-bottom: 0;
   
 }
 h5, .h5, h6, .h6 {
-  font-size: $unit*1;
-  font-size: $unitrem*1;
+  @include font-size(1  * 1.8) ;
   margin-bottom: 0;
   text-transform: uppercase;
   

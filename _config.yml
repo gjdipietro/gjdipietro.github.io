@@ -1,0 +1,10 @@
+# Site settings
+title: Greg DiPietro
+email: gjdipietro@gmail.com.com
+description: "This is my personal site."
+baseurl: "/"
+url: "gjdipietro.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
